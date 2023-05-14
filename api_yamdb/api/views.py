@@ -3,32 +3,22 @@ from django.db import IntegrityError
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-
 from rest_framework import filters, mixins, permissions, status, viewsets
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
+from reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitlesFilter
-from .permissions import (
-    AdminPermission,
-    IsAuthorOrStaffOrReadOnly,
-    ReadOnlyPermission
-)
-from .serializers import (
-    CategorySerializer,
-    CommentSerializer,
-    GenreSerializer,
-    RegisterDataSerializer,
-    ReviewSerializer,
-    TitleReadSerializer,
-    TitleWriteSerializer,
-    UserRecieveTokenSerializer,
-    UserSerializer,
-)
-from reviews.models import Category, Genre, Review, Title, User
+from .permissions import (AdminPermission, IsAuthorOrStaffOrReadOnly,
+                          ReadOnlyPermission)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, RegisterDataSerializer,
+                          ReviewSerializer, TitleReadSerializer,
+                          TitleWriteSerializer, UserRecieveTokenSerializer,
+                          UserSerializer)
 
 
 @api_view(['POST'])
