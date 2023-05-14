@@ -1,4 +1,4 @@
-![example workflow]https://github.com/kivrosa/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![example workflow](https://github.com/kivrosa/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # yamdb_final
 ## Описание проекта:
 Проект YaMDb собирает отзывы пользователей на произведения. Сами произведения в YaMDb не хранятся, здесь нельзя посмотреть фильм или послушать музыку.   
@@ -10,11 +10,11 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone git@github.com:kivrosa/infra_sp2.git
+git clone git@github.com:kivrosa/yamdb_final.git
 ```
 
 ```
-cd infra_sp2
+cd yamdb_final
 ```
 
 Перейдите в директорию ``` infra ``` и создайте файл ```.env``` с переменными окружения
