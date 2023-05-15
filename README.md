@@ -1,4 +1,4 @@
-![example workflow](https://github.com/kivrosa/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![example workflow](https://github.com/kivrosa/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)  
 Сайт доступен по адресу [158.160.102.59](158.160.102.59)
 # yamdb_final
 ## Описание проекта:
